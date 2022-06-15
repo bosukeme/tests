@@ -53,7 +53,7 @@ class Templates(Resource):
         except Exception as e:
             return {
                 'status': 'failed',
-                "message": str(e),
+                "message": str("Cross check the Access Token"),
                 "Token Error": "Cross check the Access Token"
                 }, 500
 
