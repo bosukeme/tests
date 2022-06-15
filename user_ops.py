@@ -44,6 +44,7 @@ def login_user(user_data):
 
     if result and (password == password_in_db):
         access_token = create_access_token(identity=email)
+        print(access_token)
         return {"Message": f"Welcome {first_name}",
                 "access_token": access_token}
 
