@@ -53,7 +53,8 @@ class Templates(Resource):
         except Exception as e:
             return {
                 'status': 'failed',
-                "message": str(e)
+                "message": str(e),
+                "Token Error": "Cross check the Access Token"
                 }, 500
 
     @jwt_required()
@@ -65,7 +66,8 @@ class Templates(Resource):
         except Exception as e:
             return {
                 'status': 'failed',
-                "message": str(e)
+                "message": str(e),
+                "Token Error": "Cross check the Access Token"
                 }, 500
 
     
@@ -80,7 +82,8 @@ class TemplatesUpdate(Resource):
         except Exception as e:
             return {
                 'status': 'failed',
-                "message": str(e)
+                "message": str(e),
+                "Token Error": "Cross check the Access Token"
                 }, 500
 
     @jwt_required()
@@ -93,7 +96,8 @@ class TemplatesUpdate(Resource):
         except Exception as e:
             return {
                 'status': 'failed',
-                "message": str(e)
+                "message": str(e),
+                "Token Error": "Cross check the Access Token"
                 }, 500
 
     @jwt_required()
@@ -105,6 +109,7 @@ class TemplatesUpdate(Resource):
         except Exception as e:
             return {
                 'status': 'failed',
-                "message": str(e)
+                "message": str(e),
+                "Token Error": "Cross check the Access Token"
                 }, 500
 
